@@ -1,0 +1,47 @@
+h1标题
+p段落
+i斜体
+b加粗
+form加框框 要用一个input
+address用来说明插入了地址切为斜体
+a超链接即插入地址要用到href 
+img加图片 地址用src 文字定义用alt   高height 宽width 
+		位置align ？边框宽度border？
+sup上标
+sub下标
+del删除线
+ins下划线
+pre预设文本格式
+abbr 整缩写 用到title  就是鼠标移上去后会显示title里面的内容
+定义文字显示方向<bdo dir="rtl/ltr/auto">文字从右到左/左到右/自动</bdo>
+q引号
+span就是起一个把某文字框起来以供修改的作用
+target可以选择如何进入相应链接
+	_blank	在新窗口中打开被链接文档。
+	_self	默认。在相同的框架中打开被链接文档。
+	_parent	在父框架集中打开被链接文档。
+	_top	在整个窗口中打开被链接文档。
+	framename	在指定的框架中打开被链接文档。
+
+
+link怎么用来添加网站标题小图标
+	<link rel="icon" href="f1.ico" type="image/x-icon">
+link可以链接外部样式文件
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+
+style改变文本格式（可作为属性style=""也可作为元素<style>）
+	font-family（字体），color（颜色），和font-size（字体大小）
+	text-align（文字对齐）
+表格内
+	colspan合并列
+	rowspan合并行
+
+！！！！
+服务器上传网页后，网页根目录为web，引用时地址直接填写web之后的地址
+调整a的格式必须到a里面放style
+th就像是加粗的td
+
+
+
+

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>微软 Bing 搜索</title>
+</head>
+  <style>
+    body{
+            padding: 0;
+            margin: 0;
+        }
+        .search{
+            width: 30%;            
+            margin: 100px auto;
+            display: flex;
+            /*border: 1px solid red;*/
+        }
+        .search input{
+            float: left;
+            flex: 4;
+            height: 30px;
+            outline: none;
+            border: 1px solid rgb(9, 110, 192);
+            box-sizing: border-box;width=content+border*2+padding*2
+            padding-left: 10px;
+        }
+        .search button{
+            float: right;
+            flex: 1;
+            height: 30px;
+            background-color: rgb(12, 64, 161);
+            color: white;
+            border-style: none;
+            outline: none;
+        }
+        .search button i{
+            font-style: normal;
+        }
+        .search button:hover{
+            font-size: 16px;
+        }
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #05050501e;
+      min-width: 350px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      padding: 10px 50px 20px;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block; 
+    }
+     </style>
+    </head>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <body background="必应背景.jpg"
+   style="background-repeat: no-repeat;
+   background-size: 100%;
+   background-attachment: fixed;"
+   >
+    &emsp;&emsp;&emsp;&emsp;
+    <a href="https://cn.bing.com/images/trending?form=Z9LH"target="_blank">图片</a> 
+    &emsp;&emsp; 
+    <a href="https://cn.bing.com/videos/trending?form=Z9LH1" target="_blank">视频</a>
+    &emsp;&emsp;
+    <a href="https://cn.bing.com/academic?FORM=HDRSC4" target="_blank">学术</a>
+    &emsp;&emsp;
+    <a href="https://cn.bing.com/dict/?FORM=HDRSC6" target="_blank">词典</a>
+    &emsp;&emsp;
+    <a href="https://cn.bing.com/maps?q=&FORM=HDRSC7" target="_blank">地图</a>
+    &emsp;&emsp;| &emsp;&emsp;
+    <div class="dropdown">
+        <span>Office</span>
+        <div class="dropdown-content">
+          <p>
+            <a href="https://office.live.com/start/Word.aspx?WT.mc_id=O16_BingHP">
+            <img  border="10" src="word.JPG"  width="32" height="32"></a>
+            &emsp;&emsp;&emsp;&emsp;
+            <a href="https://office.live.com/start/Excel.aspx?WT.mc_id=O16_BingHP">
+            <img  border="10" src="excel.JPG"  width="32" height="32"></a>
+            &emsp;&emsp;&emsp;&emsp;
+            <a href="https://office.live.com/start/PowerPoint.aspx?WT.mc_id=O16_BingHP">
+            <img  border="10" src="ppt.JPG"  width="32" height="32"></a></p>
+          <p>  
+            <br>
+            <a href="https://www.onenote.com/signin?wdorigin=ondcnotebooks&showHrd=true">
+            <img  border="10" src="onenote.JPG"  width="32" height="32"></a>
+            &emsp;&emsp;&emsp;&emsp;
+            <a href="https://sway.office.com/?WT.mc_id=O16_BingHP&utm_source=O16Bing&utm_medium=Nav&utm_campaign=HP">
+            <img  border="10" src="sway.JPG"  width="32" height="32"></a>
+            &emsp;&emsp;&emsp;&emsp;
+            <a href="https://onedrive.live.com/?gologin=1&WT.mc_id=O16_BingHP">             
+            <img  border="10" src="onedrive.JPG"  width="32" height="32"></a></p>
+          <p>
+            <br>
+            <a href="https://outlook.live.com/owa/?path=/calendar">
+            <img  border="10" src="日历.JPG"  width="32" height="32"></a>
+            &emsp;&emsp;&emsp;&emsp;
+            <a href="https://outlook.live.com/owa/?path=/people&WT.mc_id=O16_BingHP">
+            <img  border="10" src="人脉.JPG"  width="32" height="32"></a></p>
+        </div>
+      </div>
+    &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp; 
+    &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;
+    &emsp;&emsp;&emsp;
+    &emsp;&emsp;
+    <a href="https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=13&ct=1605020553&rver=6.7.6631.0&wp=MBI_SSL&wreply=https%3a%2f%2fcn.bing.com%2fsecure%2fPassport.aspx%3frequrl%3dhttps%253a%252f%252fcn.bing.com%252f%253fwlexpsignin%253d1%26sig%3d2E4C76B0D11968CA23FA79CED05A699B&lc=2052&id=264960&CSRFToken=23aa119a-1aa7-4be3-8409-0ad97ef4b3aa&aadredir=1" target="_blank">登录</a>
+    &emsp;&emsp;&emsp;&emsp;
+    <a href="https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=13&ct=1605020525&rver=6.7.6631.0&wp=MBI_SSL&wreply=https%3a%2f%2fcn.bing.com%2fsecure%2fPassport.aspx%3frequrl%3dhttps%253a%252f%252fcn.bing.com%252f%253fwlexpsignin%253d1%26sig%3d2E4C76B0D11968CA23FA79CED05A699B&lc=2052&id=264960&CSRFToken=d2e26358-2078-4ef8-b0d0-bdfc7559ddd8&aadredir=1">
+    <img  border="0" src="人.JPG"  width="32" height="32"></a>
+    &emsp;&emsp;
+   <div class="dropdown">
+      <button type="button" class="btn dropdown-toggle" id="dropdownMenu1" 
+              data-toggle="dropdown">
+              <img  border="0" src="三横.JPG"  width="32" height="32"></a>
+          <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" role="smenu" aria-labelledby="dropdownMenu1">
+          <li role="presentation">
+            <div class="dropdown">
+              <button type="button" class="btn dropdown-toggle" id="dropdownMenu1" 
+                      data-toggle="dropdown">
+             <img src="设置.JPG" alt="Smiley face" align="middle" width="32" height="32"> &emsp;&emsp;设置</a>
+             <span class="caret"></span>
+             </button>
+             <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+              <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="#"><a href="https://cn.bing.com/account/general?ru=https%3a%2f%2fcn.bing.com%2f&FORM=O2HV65&id=language_section#language-section" target="_blank">语言<br>中文（简体）</a></a>
+              </li>
+              <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="#"><a href="https://cn.bing.com/account/general?ru=https%3a%2f%2fcn.bing.com%2f&FORM=O2HV65&id=region_section#region-section" target="_blank">国家地区<br>中国</a></a></a>
+              </li>
+              <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="#"><a href="https://cn.bing.com/account/general?ru=https%3a%2f%2fcn.bing.com%2f&FORM=O2HV65" target="_blank">更多</a></a></a></a>
+              </li>
+             </ul>
+            </div>
+          </li>
+            <li role="presentation">
+              <a role="menuitem" tabindex="-1" href="#"> <a href="https://cn.bing.com/account/general?ru=https%3a%2f%2fcn.bing.com%2f&FORM=O2HV46&sh=0" target="_blank">安全搜索  &emsp;&emsp; &emsp;严格</a></a>
+            </li>
+            <li role="presentation">
+              <a role="menuitem" tabindex="-1" href="#"><a href="https://cn.bing.com/profile/history?FORM=O2HV46" target="_blank">搜索历史记录</a></a>
+            </li>
+            <li role="presentation">
+              <a role="menuitem" tabindex="-1" href="#"><a href="https://account.microsoft.com/account/privacy?refd=cn.bing.com&ru=https%3A%2F%2Faccount.microsoft.com%2Fprivacy%3Frefd%3Dcn.bing.com&destrt=privacy-dashboard" target="_blank">隐私</a></a>
+            </li>
+            <li role="presentation">
+              <a role="menuitem" tabindex="-1" href="#">反馈</a>
+            </li>
+      </ul>
+     </div>
+     <div class="search">
+      <input type="text" placeholder="请输入..." name="" id="" value="" />
+      <button><i>
+        <img src="\Users\zjq\Desktop\html\wang.jpg">
+      </i></button>
+  </div>
+           
+</body>
+</html>  

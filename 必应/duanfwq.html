@@ -5,14 +5,95 @@
 <title>微软 Bing 搜索</title>
 </head>
   <style>
+    body{
+     
+
+min-width:2600px;
+
+height:100%;
+padding: 0;
+margin: 0;
+        }
+        /* 导航条 */
+.T {
+  overflow: hidden;
+  
+  background-color: transparent ;
+}
+ 
+/* 导航链接 */
+.T a {
+  float:left;
+  display: block;
+  color: #f2f2f2;
+  text-align:center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+ 
+/* 链接 - 修改颜色 */
+.T a:hover {
+  background-color: transparent ;
+  color: white;
+  text-decoration: none
+}
+        .search{
+            width: 30%;            
+            margin: 100px auto;
+            display: flex;
+            /*border: 1px solid red;*/
+        }
+        .search input{
+            float: left;
+            flex: 4;
+            height: 60px;
+            outline: none;
+            border: 1px solid  white;
+            box-sizing: border-box;width=content+border*2+padding*2
+            padding-left: 10px;
+            padding-top: 0px;
+            font-size:30px
+            
+        }
+        .search button{
+            float: right;
+            flex: 1;
+            height: 60px;
+            background-color: white;
+            color: white;
+            border-style: none;
+            outline: none;
+        }
+        .search button i{
+            font-style: normal;
+        }
+        .search button:hover{
+            font-size: 16px;
+        }
     .dropdown {
+      
+      color: white;
+      position: relative;
+      display: inline-block;
+    }
+    .dropdown2 {
+      
+      color: white;
+      position:absolute;
+left:330px;
+top:15px;
+      display: inline-block;
+    }
+    .dropdown1 {
+      float: right;
+      color: white;
       position: relative;
       display: inline-block;
     }
     .dropdown-content {
       display: none;
       position: absolute;
-      background-color: #05050501e;
+      background-color:rgba(0, 0, 0, 0.322);
       min-width: 350px;
       box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
       padding: 10px 50px 20px;
@@ -25,66 +106,67 @@
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
 	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-   <body background="duan/必应背景.jpg"
+   <body 
+   background="必应\必应背景.jpg"
    style="background-repeat: no-repeat;
-   background-size: 100%;
+   background-size:100% 100%;
+   
+   min-width:1024px;
    background-attachment: fixed;"
    >
-    &emsp;&emsp;&emsp;&emsp;
+   <div class="T">
+    &nbsp; &nbsp; 
     <a href="https://cn.bing.com/images/trending?form=Z9LH"target="_blank">图片</a> 
-    &emsp;&emsp; 
+   
     <a href="https://cn.bing.com/videos/trending?form=Z9LH1" target="_blank">视频</a>
-    &emsp;&emsp;
+    
     <a href="https://cn.bing.com/academic?FORM=HDRSC4" target="_blank">学术</a>
-    &emsp;&emsp;
+   
     <a href="https://cn.bing.com/dict/?FORM=HDRSC6" target="_blank">词典</a>
-    &emsp;&emsp;
+   
     <a href="https://cn.bing.com/maps?q=&FORM=HDRSC7" target="_blank">地图</a>
-    &emsp;&emsp;| &emsp;&emsp;
+    <a >|</a>
+   
     <div class="dropdown">
-        <span>Office</span>
+        <span >Office</span>
         <div class="dropdown-content">
           <p>
             <a href="https://office.live.com/start/Word.aspx?WT.mc_id=O16_BingHP">
-            <img  border="10" src="duan/word.JPG"  width="32" height="32"></a>
+            <img  border="10" src="必应\word.JPG"  width="32" height="32"></a>
             &emsp;&emsp;&emsp;&emsp;
             <a href="https://office.live.com/start/Excel.aspx?WT.mc_id=O16_BingHP">
-            <img  border="10" src="duan/excel.JPG"  width="32" height="32"></a>
+            <img  border="10" src="必应\excel.JPG"  width="32" height="32"></a>
             &emsp;&emsp;&emsp;&emsp;
             <a href="https://office.live.com/start/PowerPoint.aspx?WT.mc_id=O16_BingHP">
-            <img  border="10" src="duan/ppt.JPG"  width="32" height="32"></a></p>
+            <img  border="10" src="必应\ppt.JPG"  width="32" height="32"></a></p>
           <p>  
             <br>
             <a href="https://www.onenote.com/signin?wdorigin=ondcnotebooks&showHrd=true">
-            <img  border="10" src="duan/onenote.JPG"  width="32" height="32"></a>
+            <img  border="10" src="必应\onenote.JPG"  width="32" height="32"></a>
             &emsp;&emsp;&emsp;&emsp;
             <a href="https://sway.office.com/?WT.mc_id=O16_BingHP&utm_source=O16Bing&utm_medium=Nav&utm_campaign=HP">
-            <img  border="10" src="duan/sway.JPG"  width="32" height="32"></a>
+            <img  border="10" src="必应\sway.JPG"  width="32" height="32"></a>
             &emsp;&emsp;&emsp;&emsp;
             <a href="https://onedrive.live.com/?gologin=1&WT.mc_id=O16_BingHP">             
-            <img  border="10" src="duan/onedrive.JPG"  width="32" height="32"></a></p>
+            <img  border="10" src="必应\onedrive.JPG"  width="32" height="32"></a></p>
           <p>
             <br>
             <a href="https://outlook.live.com/owa/?path=/calendar">
-            <img  border="10" src="duan/日历.JPG"  width="32" height="32"></a>
+            <img  border="10" src="必应\日历.JPG"  width="32" height="32"></a>
             &emsp;&emsp;&emsp;&emsp;
             <a href="https://outlook.live.com/owa/?path=/people&WT.mc_id=O16_BingHP">
-            <img  border="10" src="duan/人脉.JPG"  width="32" height="32"></a></p>
+            <img  border="10" src="必应\人脉.JPG"  width="32" height="32"></a></p>
         </div>
       </div>
-    &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp; 
-    &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;
-    &emsp;&emsp;&emsp;
-    &emsp;&emsp;
+   
+   <div class="dropdown1" >
     <a href="https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=13&ct=1605020553&rver=6.7.6631.0&wp=MBI_SSL&wreply=https%3a%2f%2fcn.bing.com%2fsecure%2fPassport.aspx%3frequrl%3dhttps%253a%252f%252fcn.bing.com%252f%253fwlexpsignin%253d1%26sig%3d2E4C76B0D11968CA23FA79CED05A699B&lc=2052&id=264960&CSRFToken=23aa119a-1aa7-4be3-8409-0ad97ef4b3aa&aadredir=1" target="_blank">登录</a>
     &emsp;&emsp;&emsp;&emsp;
     <a href="https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=13&ct=1605020525&rver=6.7.6631.0&wp=MBI_SSL&wreply=https%3a%2f%2fcn.bing.com%2fsecure%2fPassport.aspx%3frequrl%3dhttps%253a%252f%252fcn.bing.com%252f%253fwlexpsignin%253d1%26sig%3d2E4C76B0D11968CA23FA79CED05A699B&lc=2052&id=264960&CSRFToken=d2e26358-2078-4ef8-b0d0-bdfc7559ddd8&aadredir=1">
-    <img  border="0" src="duan/人.JPG"  width="32" height="32"></a>
-    &emsp;&emsp;
-   <div class="dropdown">
+    <img  border="0" src="必应\人.JPG"  width="32" height="32"></a>
       <button type="button" class="btn dropdown-toggle" id="dropdownMenu1" 
               data-toggle="dropdown">
-              <img  border="0" src="duan/三横.JPG"  width="32" height="32"></a>
+              <img  border="0" src="必应\三横.JPG"  width="32" height="32"></a>
           <span class="caret"></span>
       </button>
       <ul class="dropdown-menu" role="smenu" aria-labelledby="dropdownMenu1">
@@ -92,7 +174,7 @@
             <div class="dropdown">
               <button type="button" class="btn dropdown-toggle" id="dropdownMenu1" 
                       data-toggle="dropdown">
-             <img src="duan/设置.JPG" alt="Smiley face" align="middle" width="32" height="32"> &emsp;&emsp;设置</a>
+             <img src="必应\设置.JPG" alt="Smiley face" align="middle" width="32" height="32"> &emsp;&emsp;设置</a>
              <span class="caret"></span>
              </button>
              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
@@ -122,6 +204,19 @@
             </li>
       </ul>
      </div>
+     <div class="search" style="position: absolute;left: 500px;top: 200px;">
+      <img src="必应\bing.jpg" width="" height="60px"/>
+      <form action="https://cn.bing.com/search" target="_self" method="get">
+      <input  type="text" placeholder="请输入..." name="q" id="" value="" />
+      <button><i>
+        <img src="必应\bingss.jpg" 
+        style="box-sizing: content-box;
+        height: 60px;
+        position: absolute;
+        left: 522px;top:0px;">
+      </i></button>
+    </form>
+  </div>
            
 </body>
 </html>  
